@@ -34,6 +34,7 @@ exports.GetTaskById = async (req, res, next) => {
     }
 }
 
+/* This is a function that create a new task in the database and rending to home page. */
 exports.CreateTask = async (req, res, next) => {
     console.log(req.body)
     const { content, isCompleted } = req.body

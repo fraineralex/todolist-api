@@ -16,6 +16,7 @@ taskSchema.set('toJSON', {
     }
 })
 
+/* Creating a new model called Task. */
 const Task = model('Task', taskSchema)
 
 module.exports = Task

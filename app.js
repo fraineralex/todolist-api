@@ -3,7 +3,6 @@
 // Importing all the required modules.
 require('dotenv').config()
 require('./database/mongo')
-
 const express = require('express')
 const Sentry = require('@sentry/node')
 const Tracing = require('@sentry/tracing')

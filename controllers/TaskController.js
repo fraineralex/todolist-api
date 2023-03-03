@@ -23,6 +23,7 @@ exports.GetTaskById = async (req, res, next) => {
             error: 'the id argument must be a string of 12 bytes or a string of 24 hex characters or an integer'})
     }
 
+    /* This is a function that is being used to find a task by its id. */
     try{
         const task = await Task.findById(id)
 

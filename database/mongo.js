@@ -5,7 +5,7 @@ mongoose.set('strictQuery', true)
 
 const connectionString = process.env.MONGO_DB_URI
 
-//connection to mondodb
+/* Connecting to the database. */
 mongoose.connect(connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true

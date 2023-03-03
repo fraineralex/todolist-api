@@ -51,6 +51,7 @@ exports.CreateTask = async (req, res, next) => {
         isCompleted: isCompleted || false
     })
 
+    /* This is a function that create a new task in the database and rending to home page. */
     try {
         const savedTask = await task.save()
         res.status(201).json(savedTask)

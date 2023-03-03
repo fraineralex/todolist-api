@@ -70,6 +70,7 @@ exports.DeleteTask = async (req, res, next) => {
             error: 'the id argument must be a string of 12 bytes or a string of 24 hex characters or an integer'})
     }
 
+    /* This is a function that is being used to delete a task from the database. */
     try{
 
         const isDeleted = await Task.findByIdAndDelete(id)

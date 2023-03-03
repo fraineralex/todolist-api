@@ -36,6 +36,7 @@ app.use(Sentry.Handlers.requestHandler())
 // TracingHandler creates a trace for every incoming request
 app.use(Sentry.Handlers.tracingHandler())
 
+/* A middleware that allows us to parse the body of the request. */
 app.use(cors())
 app.use(express.json())
 
